@@ -510,6 +510,8 @@
   box-shadow: 0 6px 24px rgba(162,89,255,0.18);
   transform: translateY(-2px) scale(1.02);
 }
+
+
 .certificate-img {
   width: 72px;
   height: 72px;
@@ -600,4 +602,176 @@
 .project-filter-icon svg {
   color: #fff;
   stroke: #fff;
+}
+
+/* Certificate Popup Styles */
+.certificate-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.certificate-popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.certificate-popup-content {
+  position: relative;
+  background: #23132b;
+  border-radius: 20px;
+  max-width: 420px;
+  max-height: 80vh;
+  width: 95vw;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  animation: slideIn 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #2d1836;
+  background: #2d1836;
+}
+
+.certificate-popup-header h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.certificate-popup-close {
+  background: none;
+  border: none;
+  color: #bdb6c9;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s, background 0.2s;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificate-popup-close:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.certificate-popup-body {
+  padding: 16px 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 55vh;
+  overflow-y: auto;
+  flex: 1 1 auto;
+}
+
+.certificate-popup-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #18101f;
+  padding: 8px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-popup-details {
+  color: #bdb6c9;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.certificate-popup-details p {
+  margin: 8px 0;
+}
+
+.certificate-popup-details strong {
+  color: #fff;
+}
+
+.certificate-popup-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #a259ff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 2px solid #a259ff;
+  border-radius: 8px;
+  transition: all 0.2s;
+  margin-bottom: 25px;
+}
+
+.certificate-popup-link:hover {
+  background: #a259ff;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: scale(0.9) translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments for popup */
+@media (max-width: 768px) {
+  .certificate-popup-content {
+    width: 99vw;
+    margin: 4px;
+    max-height: 90vh;
+  }
+  
+  .certificate-popup-header {
+    padding: 16px 20px;
+  }
+  
+  .certificate-popup-body {
+    padding: 8px 4px 8px 4px;
+    max-height: 60vh;
+  }
+  .certificate-popup-img {
+    max-width: 98vw;
+    padding: 4px;
+  }
 } 

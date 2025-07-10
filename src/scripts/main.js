@@ -156,12 +156,20 @@ function renderCertificatesPanel() {
     filtered.forEach(cert => {
       const card = document.createElement('div');
       card.className = 'certificate-card';
+      card.setAttribute('data-type', cert.type); // Add data-type attribute for styling
       card.innerHTML = `
         <img src="${cert.image}" alt="${cert.name}" class="certificate-img" />
         <div class="certificate-name">${cert.name}</div>
         <div class="certificate-issuer">${cert.issuer}</div>
-        ${cert.link ? `<a href="${cert.link}" class="certificate-link" target="_blank">View</a>` : ''}
       `;
+      
+      // Add click event for popup (same for both certificates and badges)
+      const certImg = card.querySelector('.certificate-img');
+      certImg.style.cursor = 'pointer';
+      certImg.addEventListener('click', () => {
+        showCertificatePopup(cert);
+      });
+      
       contentGrid.appendChild(card);
     });
   }
@@ -265,6 +273,58 @@ function renderResumePanel() {
     panel.remove();
   });
   document.getElementById('panel-container').appendChild(panel);
+}
+
+function showCertificatePopup(certificate) {
+  // Remove existing popup if any
+  const existingPopup = document.querySelector('.certificate-popup');
+  if (existingPopup) {
+    existingPopup.remove();
+  }
+
+  // Create popup overlay
+  const popup = document.createElement('div');
+  popup.className = 'certificate-popup';
+  popup.innerHTML = `
+    <div class="certificate-popup-overlay"></div>
+    <div class="certificate-popup-content">
+      <div class="certificate-popup-header">
+        <h3>${certificate.name}</h3>
+        <button class="certificate-popup-close" title="Close">&times;</button>
+      </div>
+      <div class="certificate-popup-body">
+        <img src="${certificate.image}" alt="${certificate.name}" class="certificate-popup-img" />
+        <div class="certificate-popup-details">
+          <p><strong>Issuer:</strong> ${certificate.issuer}</p>
+          <p><strong>Type:</strong> ${certificate.type}</p>
+          ${certificate.link ? `<a href="${certificate.link}" class="certificate-popup-link" target="_blank">${certificate.type === 'badge' ? 'Verify Badge' : 'View Certificate'}</a>` : ''}
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Add to body
+  document.body.appendChild(popup);
+
+  // Close functionality
+  const closeBtn = popup.querySelector('.certificate-popup-close');
+  const overlay = popup.querySelector('.certificate-popup-overlay');
+  
+  const closePopup = () => {
+    popup.remove();
+  };
+
+  closeBtn.addEventListener('click', closePopup);
+  overlay.addEventListener('click', closePopup);
+
+  // Close on Escape key
+  const handleEscape = (e) => {
+    if (e.key === 'Escape') {
+      closePopup();
+      document.removeEventListener('keydown', handleEscape);
+    }
+  };
+  document.addEventListener('keydown', handleEscape);
 }
 
 function setNavIcons() {
