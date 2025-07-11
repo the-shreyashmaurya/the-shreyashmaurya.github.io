@@ -3,11 +3,11 @@ const projectsData = [
     name: "SkyShift",
     description: "Elevating your code to Cloud Horizons",
     images: [
-      "https://placehold.co/600x400/2d1836/fff?text=SkyShift+1",
-      "https://placehold.co/600x400/2d1836/fff?text=SkyShift+2", 
-      "https://placehold.co/600x400/2d1836/fff?text=SkyShift+3"
+      "src/images/projects/demo1.jpg",
+      "src/images/projects/demo2.jpg",
+      "src/images/projects/demo3.jpg"
     ],
-    image: "https://placehold.co/400x240/2d1836/fff?text=SkyShift",
+    image: "src/images/projects/demo1-thumb.jpg",
     category: "Cloud/DevOps",
     technologies: ["AWS", "Azure", "GCP", "Terraform", "Jenkins", "Docker", "Kubernetes"],
     github: "https://github.com/yourusername/skyshift",
@@ -23,11 +23,11 @@ const projectsData = [
     name: "RemoteTech",
     description: "Remote Device Manager",
     images: [
-      "https://placehold.co/600x400/2d1836/fff?text=RemoteTech+1",
-      "https://placehold.co/600x400/2d1836/fff?text=RemoteTech+2",
-      "https://placehold.co/600x400/2d1836/fff?text=RemoteTech+3"
+      "src/images/projects/demo4.jpg",
+      "src/images/projects/demo5.jpg",
+      "src/images/projects/demo6.jpg"
     ],
-    image: "https://placehold.co/400x240/2d1836/fff?text=RemoteTech",
+    image: "src/images/projects/demo4-thumb.jpg",
     category: "IoT/Device Management",
     technologies: ["Python", "MQTT", "WebSocket", "React", "Node.js", "MongoDB", "Docker"],
     github: "https://github.com/yourusername/remotetech",
@@ -43,10 +43,11 @@ const projectsData = [
     name: "WritingMate",
     description: "Text to Handwriting Converter",
     images: [
-      "https://placehold.co/600x400/2d1836/fff?text=WritingMate+1",
-      "https://placehold.co/600x400/2d1836/fff?text=WritingMate+2"
+      "src/images/projects/writingmate_1.png",
+      "src/images/projects/writingmate_2.png",
+      "src/images/projects/writingmate_3.png",
     ],
-    image: "https://placehold.co/400x240/2d1836/fff?text=WritingMate",
+    image: "src/images/projects/writingmate_1.png",
     category: "Python/Automation",
     technologies: ["Python", "PIL", "OpenCV", "Flask", "HTML/CSS", "JavaScript"],
     github: "https://github.com/yourusername/writingmate",
