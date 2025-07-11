@@ -351,7 +351,7 @@ function showProjectPopup(project) {
         <h3>${project.name}</h3>
         <button class="project-popup-close" title="Close">&times;</button>
       </div>
-      <div class="project-popup-body">
+      <div class="project-popup-body project-popup-body-2col">
         <div class="project-popup-image-slider">
           <div class="project-popup-images">
             ${project.images.map((img, index) => `
@@ -434,7 +434,7 @@ function showProjectPopup(project) {
     });
 
     // Auto-slide every 3 seconds
-    const autoSlide = setInterval(nextImage, 3000);
+    const autoSlide = setInterval(nextImage, 5000);
 
     // Pause auto-slide on hover
     const slider = popup.querySelector('.project-popup-image-slider');
@@ -520,7 +520,7 @@ function createPanel({ className, title, content, forceTop }) {
       <span class="panel-title">${title}</span>
       <button class="panel-close" title="Close">&times;</button>
     </div>
-    <div class="${className}-content about-panel-content">${content}</div>
+    <div class="${className}-content">${content}</div>
   `;
   panel.style.zIndex = ++panelZ;
   // Random spawn near center
