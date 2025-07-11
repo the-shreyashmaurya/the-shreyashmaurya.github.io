@@ -2,8 +2,16 @@ const projectsData = [
   {
     name: "SkyShift",
     description: "Elevating your code to Cloud Horizons",
+    images: [
+      "https://placehold.co/600x400/2d1836/fff?text=SkyShift+1",
+      "https://placehold.co/600x400/2d1836/fff?text=SkyShift+2", 
+      "https://placehold.co/600x400/2d1836/fff?text=SkyShift+3"
+    ],
     image: "https://placehold.co/400x240/2d1836/fff?text=SkyShift",
     category: "Cloud/DevOps",
+    technologies: ["AWS", "Azure", "GCP", "Terraform", "Jenkins", "Docker", "Kubernetes"],
+    github: "https://github.com/yourusername/skyshift",
+    live: "https://skyshift-demo.com",
     highlights: [
       "Engineered a one-click cloud deployment system, reducing deployment time by 90%.",
       "Automated CI/CD pipeline integration, enabling seamless deployment across AWS, Azure, and GCP.",
@@ -14,8 +22,16 @@ const projectsData = [
   {
     name: "RemoteTech",
     description: "Remote Device Manager",
+    images: [
+      "https://placehold.co/600x400/2d1836/fff?text=RemoteTech+1",
+      "https://placehold.co/600x400/2d1836/fff?text=RemoteTech+2",
+      "https://placehold.co/600x400/2d1836/fff?text=RemoteTech+3"
+    ],
     image: "https://placehold.co/400x240/2d1836/fff?text=RemoteTech",
     category: "IoT/Device Management",
+    technologies: ["Python", "MQTT", "WebSocket", "React", "Node.js", "MongoDB", "Docker"],
+    github: "https://github.com/yourusername/remotetech",
+    live: "https://remotetech-demo.com",
     highlights: [
       "Designed and developed a centralized IoT-based remote device management system, reducing manual management effort by 40%.",
       "Implemented advanced IoT protocols, improving device connectivity and reducing system downtime by 35%.",
@@ -26,8 +42,15 @@ const projectsData = [
   {
     name: "WritingMate",
     description: "Text to Handwriting Converter",
+    images: [
+      "https://placehold.co/600x400/2d1836/fff?text=WritingMate+1",
+      "https://placehold.co/600x400/2d1836/fff?text=WritingMate+2"
+    ],
     image: "https://placehold.co/400x240/2d1836/fff?text=WritingMate",
     category: "Python/Automation",
+    technologies: ["Python", "PIL", "OpenCV", "Flask", "HTML/CSS", "JavaScript"],
+    github: "https://github.com/yourusername/writingmate",
+    live: "https://writingmate-demo.com",
     highlights: [
       "Developed a Python-based script to automate text-to-handwriting conversion, reducing manual effort by 40%.",
       "Implemented optimized data structures and algorithms, improving file processing speed by 25%.",

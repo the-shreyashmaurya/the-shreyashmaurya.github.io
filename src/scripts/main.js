@@ -113,6 +113,13 @@ function renderProjectsPanel() {
         <div class="project-card-category">${p.category}</div>
         <div class="project-card-desc">${p.description}</div>
       `;
+      
+      // Add click event for popup
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        showProjectPopup(p);
+      });
+      
       contentGrid.appendChild(card);
     });
   }
@@ -309,6 +316,135 @@ function showCertificatePopup(certificate) {
   // Close functionality
   const closeBtn = popup.querySelector('.certificate-popup-close');
   const overlay = popup.querySelector('.certificate-popup-overlay');
+  
+  const closePopup = () => {
+    popup.remove();
+  };
+
+  closeBtn.addEventListener('click', closePopup);
+  overlay.addEventListener('click', closePopup);
+
+  // Close on Escape key
+  const handleEscape = (e) => {
+    if (e.key === 'Escape') {
+      closePopup();
+      document.removeEventListener('keydown', handleEscape);
+    }
+  };
+  document.addEventListener('keydown', handleEscape);
+}
+
+function showProjectPopup(project) {
+  // Remove existing popup if any
+  const existingPopup = document.querySelector('.project-popup');
+  if (existingPopup) {
+    existingPopup.remove();
+  }
+
+  // Create popup overlay
+  const popup = document.createElement('div');
+  popup.className = 'project-popup';
+  popup.innerHTML = `
+    <div class="project-popup-overlay"></div>
+    <div class="project-popup-content">
+      <div class="project-popup-header">
+        <h3>${project.name}</h3>
+        <button class="project-popup-close" title="Close">&times;</button>
+      </div>
+      <div class="project-popup-body">
+        <div class="project-popup-image-slider">
+          <div class="project-popup-images">
+            ${project.images.map((img, index) => `
+              <img src="${img}" alt="${project.name} - Image ${index + 1}" class="project-popup-img ${index === 0 ? 'active' : ''}" />
+            `).join('')}
+          </div>
+          ${project.images.length > 1 ? `
+            <button class="project-popup-nav prev" title="Previous">&lt;</button>
+            <button class="project-popup-nav next" title="Next">&gt;</button>
+            <div class="project-popup-dots">
+              ${project.images.map((_, index) => `
+                <span class="project-popup-dot ${index === 0 ? 'active' : ''}" data-index="${index}"></span>
+              `).join('')}
+            </div>
+          ` : ''}
+        </div>
+        <div class="project-popup-details">
+          <div class="project-popup-description">
+            <h4>Description</h4>
+            <p>${project.description}</p>
+          </div>
+          <div class="project-popup-technologies">
+            <h4>Technologies Used</h4>
+            <div class="project-popup-tech-tags">
+              ${project.technologies.map(tech => `<span class="project-popup-tech-tag">${tech}</span>`).join('')}
+            </div>
+          </div>
+          <div class="project-popup-highlights">
+            <h4>Key Highlights</h4>
+            <ul>
+              ${project.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+            </ul>
+          </div>
+          <div class="project-popup-links">
+            ${project.github ? `<a href="${project.github}" class="project-popup-link github" target="_blank">GitHub</a>` : ''}
+            ${project.live ? `<a href="${project.live}" class="project-popup-link live" target="_blank">Live Demo</a>` : ''}
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Add to body
+  document.body.appendChild(popup);
+
+  // Image slider functionality
+  if (project.images.length > 1) {
+    const images = popup.querySelectorAll('.project-popup-img');
+    const dots = popup.querySelectorAll('.project-popup-dot');
+    const prevBtn = popup.querySelector('.project-popup-nav.prev');
+    const nextBtn = popup.querySelector('.project-popup-nav.next');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+      currentIndex = index;
+    }
+
+    function nextImage() {
+      const nextIndex = (currentIndex + 1) % images.length;
+      showImage(nextIndex);
+    }
+
+    function prevImage() {
+      const prevIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage(prevIndex);
+    }
+
+    // Event listeners for navigation
+    if (prevBtn) prevBtn.addEventListener('click', prevImage);
+    if (nextBtn) nextBtn.addEventListener('click', nextImage);
+    
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => showImage(index));
+    });
+
+    // Auto-slide every 3 seconds
+    const autoSlide = setInterval(nextImage, 3000);
+
+    // Pause auto-slide on hover
+    const slider = popup.querySelector('.project-popup-image-slider');
+    slider.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    slider.addEventListener('mouseleave', () => setInterval(nextImage, 3000));
+  }
+
+  // Close functionality
+  const closeBtn = popup.querySelector('.project-popup-close');
+  const overlay = popup.querySelector('.project-popup-overlay');
   
   const closePopup = () => {
     popup.remove();

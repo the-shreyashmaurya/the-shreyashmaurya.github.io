@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akira Nakamura | Digital Designer</title>
+  <title>Shreyash Maurya | Portfolio</title>
   <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
+  <div id="small-screen-overlay" style="display:none;">
+    <div class="small-screen-message">
+      <h2>Screen Too Small</h2>
+      <p>For the best experience, please view this portfolio on a larger screen.</p>
+    </div>
+  </div>
   <div class="app-bg"></div>
   <header class="app-header">
     <div class="header-left">
@@ -39,21 +45,19 @@
     <a href="tel:+917666336947" class="social-icon" title="Phone" aria-label="Phone">
       <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92V21a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h4.09a2 2 0 0 1 2 1.72c.13 1.13.37 2.23.72 3.28a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c1.05.35 2.15.59 3.28.72A2 2 0 0 1 21 18.91V21z"/></svg>
     </a>
-    <!-- <a href="https://www.linkedin.com/in/the-shreyashmaurya" class="social-icon" title="LinkedIn" aria-label="LinkedIn" target="_blank">
-      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
-    </a> -->
+
     <a href="https://www.linkedin.com/in/the-shreyashmaurya" title="LinkedIn" target="_blank" aria-label="LinkedIn" class="social-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v15h-4V8zm7 0h3.5v2.18h.05c.49-.93 1.7-1.91 3.5-1.91 3.74 0 4.45 2.46 4.45 5.66V23h-4V15.5c0-1.78-.03-4.08-2.5-4.08-2.5 0-2.88 1.95-2.88 3.96V23h-4V8z"/>
       </svg>
     </a>
-    <a href="https://www.instagram.com/yourusername" class="social-icon" title="Instagram" aria-label="Instagram" target="_blank">
+    <a href="https://www.instagram.com/the_shreyashmaurya" class="social-icon" title="Instagram" aria-label="Instagram" target="_blank">
       <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
     </a>
-    <a href="https://github.com/yourusername" class="social-icon" title="GitHub" aria-label="GitHub" target="_blank">
+    <a href="https://github.com/the-shreyashmaurya" class="social-icon" title="GitHub" aria-label="GitHub" target="_blank">
       <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
     </a>
-    <a href="https://twitter.com/yourusername" class="social-icon" title="Twitter (X)" aria-label="Twitter (X)" target="_blank">
+    <a href="https://x.com/_shreyashmaurya" class="social-icon" title="Twitter (X)" aria-label="Twitter (X)" target="_blank">
       <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4 1.64a9.09 9.09 0 0 1-2.88 1.1A4.48 4.48 0 0 0 16.5 1c-2.5 0-4.5 2.24-4.5 5 0 .39.04.76.12 1.12C7.69 6.96 4.07 5.13 1.64 2.16c-.42.72-.66 1.56-.66 2.44 0 1.68.8 3.17 2.02 4.04A4.48 4.48 0 0 1 1 7.15v.06c0 2.36 1.5 4.32 3.7 4.77-.36.1-.74.16-1.13.16-.28 0-.54-.03-.8-.08.54 1.7 2.1 2.94 3.95 2.97A9.05 9.05 0 0 1 1 19.54 12.8 12.8 0 0 0 7.29 21.5c8.38 0 12.96-7.25 12.96-13.54 0-.21 0-.42-.02-.63A9.18 9.18 0 0 0 23 3z"/></svg>
     </a>
     <a href="https://www.google.com/maps/place/Pune,+India" class="social-icon" title="Location" aria-label="Location" target="_blank">
