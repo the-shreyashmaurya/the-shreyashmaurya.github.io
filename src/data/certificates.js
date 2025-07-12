@@ -53,53 +53,53 @@ const certificatesData = [
     link: "https://www.credly.com/badges/8f70209e-b98a-4408-8e22-4a8480980594"
   },
 
-  {
-    name: "AWS Knowledge: Data Migration",
-    image: "src/images/badges/aws_knowledge_data_migration.png",
-    issuer: "AWS Training and Certification",
-    type: "badge",
-    link: "https://www.credly.com/badges/e877585e-2ea7-48c5-8c17-a74dae164aed"
-  },
+  // {
+  //   name: "AWS Knowledge: Data Migration",
+  //   image: "src/images/badges/aws_knowledge_data_migration.png",
+  //   issuer: "AWS Training and Certification",
+  //   type: "badge",
+  //   link: "https://www.credly.com/badges/e877585e-2ea7-48c5-8c17-a74dae164aed"
+  // },
 
 
-  {
-    name: "AWS Data Migration Knowledge",
-    image: "src/images/certificates/data_migration_knowledge.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/data-migration-knowledge"
-  },
-  {
-    name: "Fundamentals of Analytics on AWS – Part 1",
-    image: "src/images/certificates/fundamentals_of_analytics_on_aws_part_1.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/fundamentals-of-analytics-on-aws-part-1"
-  },
+  // {
+  //   name: "AWS Data Migration Knowledge",
+  //   image: "src/images/certificates/data_migration_knowledge.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/data-migration-knowledge"
+  // },
+  // {
+  //   name: "Fundamentals of Analytics on AWS – Part 1",
+  //   image: "src/images/certificates/fundamentals_of_analytics_on_aws_part_1.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/fundamentals-of-analytics-on-aws-part-1"
+  // },
 
 
-  {
-    name: "AWS Partner : Accreditations Learning Plan",
-    image: "src/images/certificates/accreditations_learning_plan.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/accreditations-learning-plan"
-  },
+  // {
+  //   name: "AWS Partner : Accreditations Learning Plan",
+  //   image: "src/images/certificates/accreditations_learning_plan.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/accreditations-learning-plan"
+  // },
 
-  {
-    name: "Well-Architected Proficient",
-    image: "src/images/badges/well_architected_proficient.png",
-    issuer: "AWS Training and Certification",
-    type: "badge",
-    link: "https://www.credly.com/badges/4e19b8c3-7f34-4b54-a48b-f3e48b1e0efb"
-  },
-  {
-    name: "AWS Partner : Well-Architected Best Practices (Technical)",
-    image: "src/images/certificates/well_architected_best_practices_technical.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/well-architected-best-practices"
-  },
+  // {
+  //   name: "Well-Architected Proficient",
+  //   image: "src/images/badges/well_architected_proficient.png",
+  //   issuer: "AWS Training and Certification",
+  //   type: "badge",
+  //   link: "https://www.credly.com/badges/4e19b8c3-7f34-4b54-a48b-f3e48b1e0efb"
+  // },
+  // {
+  //   name: "AWS Partner : Well-Architected Best Practices (Technical)",
+  //   image: "src/images/certificates/well_architected_best_practices_technical.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/well-architected-best-practices"
+  // },
 
 
   {
@@ -116,69 +116,69 @@ const certificatesData = [
     type: "certificate",
     link: "https://aws.amazon.com/verification/data-scientist-learning-plan-partner"
   },
-  {
-    name: "AWS Partner: Digital Sovereignty on AWS (Technical)",
-    image: "src/images/badges/aws_partner_digital_sovereignty_on_aws_technical.png",
-    issuer: "AWS Training and Certification",
-    type: "badge",
-    link: "https://www.credly.com/badges/b3784d0b-bdb7-4e54-b8e0-0e5dc012573f"
-  },
-  {
-    name: "AWS Partner: Digital Sovereignty on AWS (Technical)",
-    image: "src/images/certificates/digital_sovereignty_on_aws_technical.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/digital-sovereignty-on-aws-technical"
-  },
-  {
-    name: "AWS Partner: Generative AI on AWS Essentials (Business)",
-    image: "src/images/certificates/generative_ai_on_aws_essentials_business.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/generative-ai-on-aws-essentials-business"
-  },
-  {
-    name: "AWS Partner: Generative AI on AWS (Technical)",
-    image: "src/images/certificates/generative_ai_on_aws_technical.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/generative-ai-on-aws-technical"
-  },
-  {
-    name: "AWS Partner: Generative AI Sales 2025 - Specialized",
-    image: "src/images/badges/aws_partner_generative_ai_sales_2025_specialized.png",
-    issuer: "AWS Training and Certification",
-    type: "badge",
-    link: "https://www.credly.com/badges/fa95d042-640b-49c1-933d-127d76247eb2"
-  },
-  {
-    name: "AWS Partner: Generative AI Technical – Specialized",
-    image: "src/images/badges/aws_partner_generative_ai_technical_specialized.png",
-    issuer: "AWS Training and Certification",
-    type: "badge",
-    link: "https://www.credly.com/badges/a672531f-6ee0-4d10-aa76-851f6b514c10"
-  },
-  {
-    name: "AWS Partner: Generative AI Sales",
-    image: "src/images/certificates/generative_ai_sales.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/generative-ai-sales"
-  },
-  {
-    name: "Introduction to AWS DevOps Navigate",
-    image: "src/images/certificates/introduction_to_aws_devops_navigate.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/introduction-to-aws-devops-navigate"
-  },  
-  {
-    name: "AWS Partner: Generative AI Essentials",
-    image: "src/images/badges/aws_partner_generative_ai_essentials.png",
-    issuer: "AWS Training and Certification",
-    type: "badge",
-    link: "https://www.credly.com/badges/2863c93f-74cd-41c4-a66c-7f153fed29e7"
-  },
+  // {
+  //   name: "AWS Partner: Digital Sovereignty on AWS (Technical)",
+  //   image: "src/images/badges/aws_partner_digital_sovereignty_on_aws_technical.png",
+  //   issuer: "AWS Training and Certification",
+  //   type: "badge",
+  //   link: "https://www.credly.com/badges/b3784d0b-bdb7-4e54-b8e0-0e5dc012573f"
+  // },
+  // {
+  //   name: "AWS Partner: Digital Sovereignty on AWS (Technical)",
+  //   image: "src/images/certificates/digital_sovereignty_on_aws_technical.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/digital-sovereignty-on-aws-technical"
+  // },
+  // {
+  //   name: "AWS Partner: Generative AI on AWS Essentials (Business)",
+  //   image: "src/images/certificates/generative_ai_on_aws_essentials_business.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/generative-ai-on-aws-essentials-business"
+  // },
+  // {
+  //   name: "AWS Partner: Generative AI on AWS (Technical)",
+  //   image: "src/images/certificates/generative_ai_on_aws_technical.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/generative-ai-on-aws-technical"
+  // },
+  // {
+  //   name: "AWS Partner: Generative AI Sales 2025 - Specialized",
+  //   image: "src/images/badges/aws_partner_generative_ai_sales_2025_specialized.png",
+  //   issuer: "AWS Training and Certification",
+  //   type: "badge",
+  //   link: "https://www.credly.com/badges/fa95d042-640b-49c1-933d-127d76247eb2"
+  // },
+  // {
+  //   name: "AWS Partner: Generative AI Technical – Specialized",
+  //   image: "src/images/badges/aws_partner_generative_ai_technical_specialized.png",
+  //   issuer: "AWS Training and Certification",
+  //   type: "badge",
+  //   link: "https://www.credly.com/badges/a672531f-6ee0-4d10-aa76-851f6b514c10"
+  // },
+  // {
+  //   name: "AWS Partner: Generative AI Sales",
+  //   image: "src/images/certificates/generative_ai_sales.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/generative-ai-sales"
+  // },
+  // {
+  //   name: "Introduction to AWS DevOps Navigate",
+  //   image: "src/images/certificates/introduction_to_aws_devops_navigate.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/introduction-to-aws-devops-navigate"
+  // },  
+  // {
+  //   name: "AWS Partner: Generative AI Essentials",
+  //   image: "src/images/badges/aws_partner_generative_ai_essentials.png",
+  //   issuer: "AWS Training and Certification",
+  //   type: "badge",
+  //   link: "https://www.credly.com/badges/2863c93f-74cd-41c4-a66c-7f153fed29e7"
+  // },
   {
     name: "AWS Partner: Security Governance at Scale (Technical)",
     image: "src/images/certificates/security_governance_at_scale_technical.png",
@@ -199,13 +199,13 @@ const certificatesData = [
     type: "certificate",
     link: "https://aws.amazon.com/verification/iot-on-aws-business"
   },
-  {
-    name: "AWS Partner: Migrating Workloads to AWS (Technical)",
-    image: "src/images/certificates/migrating_workloads_to_aws_technical.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/migrating-workloads-to-aws-technical"
-  },
+  // {
+  //   name: "AWS Partner: Migrating Workloads to AWS (Technical)",
+  //   image: "src/images/certificates/migrating_workloads_to_aws_technical.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/migrating-workloads-to-aws-technical"
+  // },
 
   {
     name: " AWS Technical Essentials",
@@ -215,34 +215,34 @@ const certificatesData = [
     link: "https://aws.amazon.com/verification/aws-technical-essentials"
   },
 
-  {
-    name: " Amazon EBS Getting Started",
-    image: "src/images/certificates/amazon_ebs_getting_started.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/amazon-ebs-getting-started"
-  },
-  {
-    name: "AWS Partner: Migration Sales Essentials",
-    image: "src/images/certificates/migration_sales_essentials.png",
-    issuer: "AWS",
-    type: "certificate",
-    link: "https://aws.amazon.com/verification/migration-sales-essentials"
-  },
-    {
-    name: "AWS Partner: Migration Sales Essentials",
-    image: "src/images/badges/aws_partner_migration_sales_essentials.png",
-    issuer: "AWS Training and Certification",
-    type: "badge",
-    link: "https://www.credly.com/badges/596170af-1537-4616-a624-5db094af501c"
-  },
-  {
-    name: "AWS Partner: Sales Accreditation",
-    image: "src/images/badges/aws_partner_sales_accreditation.png",
-    issuer: "AWS Training and Certification",
-    type: "badge",
-    link: "https://www.credly.com/badges/ee13a5a5-d049-401a-b702-0d19b17e97d9"
-  },
+  // {
+  //   name: " Amazon EBS Getting Started",
+  //   image: "src/images/certificates/amazon_ebs_getting_started.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/amazon-ebs-getting-started"
+  // },
+  // {
+  //   name: "AWS Partner: Migration Sales Essentials",
+  //   image: "src/images/certificates/migration_sales_essentials.png",
+  //   issuer: "AWS",
+  //   type: "certificate",
+  //   link: "https://aws.amazon.com/verification/migration-sales-essentials"
+  // },
+  //   {
+  //   name: "AWS Partner: Migration Sales Essentials",
+  //   image: "src/images/badges/aws_partner_migration_sales_essentials.png",
+  //   issuer: "AWS Training and Certification",
+  //   type: "badge",
+  //   link: "https://www.credly.com/badges/596170af-1537-4616-a624-5db094af501c"
+  // },
+  // {
+  //   name: "AWS Partner: Sales Accreditation",
+  //   image: "src/images/badges/aws_partner_sales_accreditation.png",
+  //   issuer: "AWS Training and Certification",
+  //   type: "badge",
+  //   link: "https://www.credly.com/badges/ee13a5a5-d049-401a-b702-0d19b17e97d9"
+  // },
 
 
   {
